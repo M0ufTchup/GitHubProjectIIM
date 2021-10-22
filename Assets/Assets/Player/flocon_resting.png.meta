@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: e82f41d27058e6449a3d0341bda7de72
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2511337297022141318
+    second: flocon_resting_0
+  - first:
+      213: -4053373245130182038
+    second: flocon_resting_1
+  - first:
+      213: 2237177555968974513
+    second: flocon_resting_2
+  - first:
+      213: 6867264680797277846
+    second: flocon_resting_3
+  - first:
+      213: 4212339315267361891
+    second: flocon_resting_4
+  - first:
+      213: -5959261206907646690
+    second: flocon_resting_5
+  - first:
+      213: 7315941319094278846
+    second: flocon_resting_6
+  - first:
+      213: 3259891171693678699
+    second: flocon_resting_7
+  - first:
+      213: 1174630195111094335
+    second: flocon_resting_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +102,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: flocon_resting_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 693
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c3ec3b800f52dd0800000000000000
+      internalID: -2511337297022141318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_1
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 176
+        width: 689
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6271fd52868fb7c0800000000000000
+      internalID: -4053373245130182038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_2
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 176
+        width: 689
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bed103522d0c0f10800000000000000
+      internalID: 2237177555968974513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_3
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 176
+        width: 689
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e0285c7dc6d4f50800000000000000
+      internalID: 6867264680797277846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_4
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 176
+        width: 689
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c5cef0a4c357a30800000000000000
+      internalID: 4212339315267361891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_5
+      rect:
+        serializedVersion: 2
+        x: 4046
+        y: 176
+        width: 690
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d018e71837c4da0800000000000000
+      internalID: -5959261206907646690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_6
+      rect:
+        serializedVersion: 2
+        x: 4830
+        y: 176
+        width: 690
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba97324ed1778560800000000000000
+      internalID: 7315941319094278846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_7
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 176
+        width: 689
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60db3fbfb57d3d20800000000000000
+      internalID: 3259891171693678699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flocon_resting_8
+      rect:
+        serializedVersion: 2
+        x: 6405
+        y: 176
+        width: 690
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f386b0260ff1d4010800000000000000
+      internalID: 1174630195111094335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -7,6 +7,6 @@ public class Rejouer : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("Sweet Home Level");
+        SceneManager.LoadScene("SampleScene");
     }
 }

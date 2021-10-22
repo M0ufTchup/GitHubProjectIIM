@@ -4,7 +4,15 @@ Sweet Overworked Soul
 A game by Julien Barlet, Romain de Leuze and Gaëtan Perré
 -----------
 
-Sweet Overworked Soul is a combination of the three first year projects made in 2021 by three students of the prestigious IIM school. 
+Sweet Overworked Soul is a combination of the three first year projects made in 2021 by three students of the prestigious IIM school : 
+
+  * Lost Soul
+  * Sweet Home
+  * Overworked
+
+The project uses assets from all three games. The player character from "Sweet Home", NPCs from "lost Soul" and tiles from "Overworked".
+
+---
 
 Contributors:
 

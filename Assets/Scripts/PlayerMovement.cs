@@ -51,21 +51,6 @@ public class PlayerMovement : MonoBehaviour
             child.attackDamage = attack;
         }
 
-        if (range)
-        {
-            GetComponent<PlayerShoot>().Darker(range);
-            if (wich == "Dark")
-            {
-                animator.SetBool("Purple", false);
-            }
-            else if (wich == "Purple")
-            {
-                animator.SetBool("Purple", true);
-            }
-        }
-        else
-            GetComponent<PlayerShoot>().Darker(range);
-
         if (!dead && !stop)
         {
             movement.x = Input.GetAxisRaw("Horizontal");

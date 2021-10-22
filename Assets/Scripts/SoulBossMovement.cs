@@ -14,9 +14,6 @@ public class SoulBossMovement : MonoBehaviour
     IEnumerator prepareCoroutine;
 
     public GameObject target;
-    public GameObject badSoul;
-    public GameObject treeLeft;
-    public GameObject treeRight;
     public float chaseSpawnRadius = 3f;
     public float chaseAttackRadius = 1f;
 
@@ -116,35 +113,6 @@ public class SoulBossMovement : MonoBehaviour
                 moveSpeed = 4f;
             }
         }
-
-        if (summoning)
-        {
-            if (Vector2.Distance(badSoul.transform.position, transform.position) >= 0.1)
-            {
-                Vector3 temp = Vector3.MoveTowards(transform.position, badSoul.transform.position, 20 * Time.deltaTime);
-                myRigidBody.MovePosition(temp);
-            }
-            else
-            {
-                target.GetComponentInChildren<Possession>().noboss();
-                GetComponent<CapsuleCollider2D>().enabled = false;
-                armorHitbox.enabled = true;
-                badSoul.GetComponent<Animator>().SetTrigger("In");
-                badSoul.GetComponent<AngrySoulMvm>().inside = true;
-                badSoul.GetComponent<AngrySoulMvm>().summoning = false;
-                GetComponent<SoulBossHealth>().currenthealth = 150;
-                animator.SetBool("Summon", false);
-                animator.SetFloat("Player", 0);
-                if (patternCoroutine != null)
-                {
-                    StopCoroutine(patternCoroutine);
-                }
-                patternCoroutine = Pattern(1);
-                if (!playerDead)
-                    StartCoroutine(patternCoroutine);
-                summoning = false;
-            }
-        }
     }
 
     void CheckDistanceSpawn()
@@ -155,11 +123,9 @@ public class SoulBossMovement : MonoBehaviour
             animator.SetTrigger("Start");
             if (playerDead)
             {
-                treeRight.GetComponent<ActiveBarrier>().EnableBarrier();
                 playerDead = false;
             }
             waiting = false;
-            treeLeft.GetComponent<ActiveBarrier>().EnableBarrier();
             awake = true;
         }
     }
@@ -232,7 +198,6 @@ public class SoulBossMovement : MonoBehaviour
             animator.SetTrigger("Down");
             moveSpeed = 4f;
             GetComponent<CapsuleCollider2D>().enabled = true;
-            badSoul.GetComponent<AngrySoulMvm>().inside = false;
             animator.SetFloat("Rattack", 0);
             animator.SetFloat("DashAttack", 0);
             target.GetComponentInChildren<Possession>().yesboss();
@@ -319,18 +284,12 @@ public class SoulBossMovement : MonoBehaviour
         animator.SetFloat("DashAttack", 0);
         yield return new WaitForSeconds(2f);
         transform.position = new Vector3(-9.44f, -53.62f);
-        treeLeft.GetComponent<ActiveBarrier>().DisableBarrier();
-        treeRight.GetComponent<ActiveBarrier>().DisableBarrier();
         armorHitbox.enabled = false;
         animator.SetTrigger("Down");
         moveSpeed = 4f;
         awake = false;
         isAttacking = false;
         GetComponent<SoulBossHealth>().currenthealth = 150;
-        badSoul.GetComponent<Animator>().SetTrigger("In");
-        badSoul.GetComponent<AngrySoulMvm>().inside = true;
-        badSoul.GetComponent<AngrySoulMvm>().summoning = false;
-        badSoul.GetComponent<AngrySoulMvm>().currentHealth = 500;
         animator.SetFloat("Rattack", 0);
         animator.SetFloat("DashAttack", 0);
     }

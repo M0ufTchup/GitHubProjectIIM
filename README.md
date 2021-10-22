@@ -10,4 +10,4 @@ Contributors:
 
   * Julien Barlet [M0ufTchup](https://github.com/M0ufTchup).
   * Romain de Leuze [RodeSeze](https://github.com/RodeSeze)
-  * Gaëtan Perré [GPM9747] (https://github.com/GPM9747)
+  * Gaëtan Perré [GPM9747](https://github.com/GPM9747)

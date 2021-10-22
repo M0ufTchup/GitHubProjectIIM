@@ -10,7 +10,7 @@ public class PlayerLife : MonoBehaviour
     public int damage;
     private int timerCoroutine = 0;
 
-    public HealthBar healthBar;
+    //public HealthBar healthBar;
 
     public float time;
     public float decreaseTime;
@@ -41,7 +41,7 @@ public class PlayerLife : MonoBehaviour
         time = 60f;
         decreaseTime = 1f;
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        //healthBar.SetMaxHealth(maxHealth);
         scriptPognon = life.GetComponent<pognon>();
 
         if (instance == null)
@@ -72,19 +72,19 @@ public class PlayerLife : MonoBehaviour
         }
 
         currentHealth += amount;
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0 && scriptPognon.coin > 0)
         {
             scriptPognon.life();
             currentHealth = maxHealth;
-            healthBar.SetHealth(currentHealth);
+            //healthBar.SetHealth(currentHealth);
             return;
         }
     }
